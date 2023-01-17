@@ -56,7 +56,7 @@
     section1:function(){
       let cnt = 0;
       let setId = 0;
-      let step = 0;
+      // let step = 0;
 
       $(window).resize(function(){
         var winWidth = $(window).width();
@@ -94,7 +94,7 @@
         setId = setInterval( function(){
           nextCount();
           countTimer(); //타이머 카운트 바
-        }, 5000);
+        }, 3000);
 
       }
       autoTimer();
@@ -151,13 +151,13 @@
       function countTimer(){ // 프로그레스바
         // console.log("실행");
 
-        step = 0;
+        let step = 0;
         let setT = 0;
         let f = true;
         // console.log("처음" + step);
         clearInterval(setT);
         setT = setInterval(function(){
-          step += 0.6;
+          step += 1;
           if( step >= 300 ) {
             clearInterval(setT);
             step=1;
