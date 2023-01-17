@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>skhynix</title>
+  <meta name="publisher" content="sangho">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/response.css">
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css"/>
+  <script src="./js/lib/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+  <header id="header">
+    <div class="top-img">
+      <img src="./img/web_Expo.png" alt="">
+    </div>
+    <div class="container">
+      <div class="left">
+        <img src="./img/hy_logo.webp" alt="">
+      </div>
+      <div class="center">
+        <nav id="nav"> <!-- PC 메뉴 -->
+          <ul>
+            <li>
+              <a href="#" class="main-btn">기술</a>
+              <div class="sub"> <!-- 서브메뉴 통합 -->
+                <div class="gap">
+                  <ul>
+                    <li>
+                      <dl>
+                        <dt><a href="#">기술</a></dt>
+                        <dd><a href="#">반도체</a></dd>
+                        <dd><a href="#">비즈니스</a></dd>
+                        <dd><a href="#">트렌드</a></dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt><a href="#">사람&문화</a></dt>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt><a href="#">지속가능경영</a></dt>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt><a href="#">프레스센터</a></dt>
+                        <dd><a href="#">보도자료</a></dd>
+                        <dd><a href="#">미디어라이브러리</a></dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl>
+                        <dt><a href="#">회사소개</a></dt>
+                        <dd>
+                          <a href="#">개요</a>
+                          <i class="fas fa-external-link-alt"></i>
+                        </dd>
+                        <dd>
+                          <a href="#">경영실적</a>
+                          <i class="fas fa-external-link-alt"></i>
+                        </dd>
+                        <dd>
+                          <a href="#">지속가능경영보고서</a>
+                          <i class="fas fa-external-link-alt"></i>
+                        </dd>
+                        <dd>
+                          <a href="#">채용정보</a>
+                          <i class="fas fa-external-link-alt"></i>
+                        </dd>
+                      </dl>
+                    </li>
+                  </ul>
+                  <div class="con-box">
+                    <div class="con-box-gap">
+                      <div class="top">
+                        <a href="#">
+                          <img src="./img/gnb_banner.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="bottom">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="main-btn">사람&문화</a>
+            </li>
+            <li>
+              <a href="#" class="main-btn">지속가능경영</a>
+            </li>
+            <span></span>
+            <li>
+              <a href="#" class="main-btn">프레스센터</a>
+            </li>
+            <li>
+              <a href="#" class="main-btn">회사소개</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="monileNav"> <!-- 모바일 메뉴 -->
+          <ul>
+            <li>
+              <div class="main-bar">
+                <a href="#" class="main-btn">기술</a>
+                <i class="menu-plus plus1">
+                  <div class="plus-bar1"></div>
+                  <div class="plus-bar2"></div>
+                </i>
+              </div>
+
+              <div class="sub sub1">
+                <a href="#">반도체</a>
+                <a href="#">비즈니스</a>
+                <a href="#">트렌드</a>
+              </div>
+            </li>
+            <li>
+              <div class="main-bar">
+                <a href="#" class="main-btn">사람&문화</a>
+              </div>
+            </li>
+            <li>
+              <div class="main-bar">
+                <a href="#" class="main-btn">지속가능경영</a>
+              </div>
+            </li>
+            <li>
+              <div class="main-bar">
+                <a href="#" class="main-btn">프레스센터</a>
+                <i class="menu-plus plus2">
+                  <div class="plus-bar1"></div>
+                  <div class="plus-bar2"></div>
+                </i>
+              </div>
+              <div class="sub sub2">
+                <a href="#">보도자료</a>
+                <a href="#">미디어라이브러리</a>
+              </div>
+            </li>
+            <li>
+              <div class="main-bar">
+                <a href="#" class="main-btn">회사소개</a>
+                <i class="menu-plus plus3">
+                  <div class="plus-bar1"></div>
+                  <div class="plus-bar2"></div>
+                </i>
+              </div>
+              <div class="sub sub3">
+                <a href="#">개요</a>
+                <a href="#">경영실적</a>
+                <a href="#">지속가능경영보고서</a>
+                <a href="#">채용정보</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <form action="">
+          <label for="search">
+            <input type="text" id="search" placeholder=" '반도체'를 검색해보세요. ">
+            <button type="submit" class="">
+              <i class="fas fa-search"></i>
+            </button>
+          </label>
+        </form>
+        <a href="#" class="globe"><i class="fas fa-globe"></i></a>
+        <a href="#" id="mobile-menu">
+          <i class="bar bar1"></i>
+          <i class="bar bar2"></i>
+          <i class="bar bar3"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="section1">
+      <div class="slide-container">
+        <div class="slide-view">
+          <ul class="slide-wrap">
+            <li class="slide slide3"> <!-- 처음 커버 -->
+              <div class="slide-left">
+                <a href="#"><img src="./img/DDR5_940.png" alt=""></a>
+              </div>
+              <div class="slide-right">
+                <div class="slide-gap">
+                  <div class="slide-con">
+                    <h4>프레스센터</h4>
+                    <div id="myProgress">
+                      <!-- <div id="myBar"></div> -->
+                    </div>
+                    <h2>SK하이닉스, “서버용 메모리 신시장 개척”… 최신형 서버 D램 DDR5로 세계 최초 인텔···</h2>
+                    <h5>· 최근 출시된 인텔 CPU ‘사파이어래피즈’에 호환되는 10나노급 4세대 DDR5 인증 · “DDR5로 서버용 메모리 주력제품 세대 교체, 다운턴 조기 극</h5>
+                    <a href="#">
+                      <img src="./img/icon-outlined-24-px-r-ight.svg" alt="">
+                      <h3>자세히 읽기</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slide slide1">
+              <div class="slide-left">
+                <a href="#"><img src="./img/1_940X520_수정.webp" alt=""></a>
+              </div>
+              <div class="slide-right">
+                <div class="slide-gap">
+                  <div class="slide-con">
+                    <h4>사람&문화</h4>
+                    <div id="myProgress">
+                      <div id="myBar"></div>
+                    </div>
+                    <h2>한 청년이 30년 반도체 베테랑이 되기까지.. 제1호 SK하이닉스 ‘마스터’의 탄생</h2>
+                    <h5>모든 분야마다 ‘구루(Guru, 스승, 선각자)’가 있다.
+                      자신이 몸 담고 있는 분야에서 오랜 경험과 노하우로 독보적인 입지와 새로운 길을 개척해내...</h5>
+                    <a href="#">
+                      <img src="./img/icon-outlined-24-px-r-ight.svg" alt="">
+                      <h3>자세히 읽기</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slide slide2">
+              <div class="slide-left">
+                <a href="#"><img src="./img/(940x520).png" alt=""></a>
+              </div>
+              <div class="slide-right">
+                <div class="slide-gap">
+                  <div class="slide-con">
+                    <h4>기술</h4>
+                    <div id="myProgress">
+                      <div id="myBar"></div>
+                    </div>
+                    <h2>[반도체 전공정 6편 완결편] 반도체에 생명을 불어넣는 연결, ‘금속배선’ (6/6)</h2>
+                    <h5>최근 우리는 수많은 반도체 관련 뉴스를 접하고 있다. 반도체 관련 소식을 접하면서 우리는 자연스레 반도체가 단순한 수출 역군을 넘어서 국가・・・</h5>
+                    <a href="#">
+                      <img src="./img/icon-outlined-24-px-r-ight.svg" alt="">
+                      <h3>자세히 읽기</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slide slide3">
+              <div class="slide-left">
+                <a href="#"><img src="./img/DDR5_940.png" alt=""></a>
+              </div>
+              <div class="slide-right">
+                <div class="slide-gap">
+                  <div class="slide-con">
+                    <h4>프레스센터</h4>
+                    <div id="myProgress">
+                      <div id="myBar"></div>
+                    </div>
+                    <h2>SK하이닉스, “서버용 메모리 신시장 개척”… 최신형 서버 D램 DDR5로 세계 최초 인텔···</h2>
+                    <h5>· 최근 출시된 인텔 CPU ‘사파이어래피즈’에 호환되는 10나노급 4세대 DDR5 인증 · “DDR5로 서버용 메모리 주력제품 세대 교체, 다운턴 조기 극</h5>
+                    <a href="#">
+                      <img src="./img/icon-outlined-24-px-r-ight.svg" alt="">
+                      <h3>자세히 읽기</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="slide slide1"> <!-- 마지막커버 -->
+              <div class="slide-left">
+                <a href="#"><img src="./img/1_940X520_수정.webp" alt=""></a>
+              </div>
+              <div class="slide-right">
+                <div class="slide-gap">
+                  <div class="slide-con">
+                    <h4>사람&문화</h4>
+                    <div id="myProgress">
+                      <div id="myBar"></div>
+                    </div>
+                    <h2>한 청년이 30년 반도체 베테랑이 되기까지.. 제1호 SK하이닉스 ‘마스터’의 탄생</h2>
+                    <h5>모든 분야마다 ‘구루(Guru, 스승, 선각자)’가 있다.
+                      자신이 몸 담고 있는 분야에서 오랜 경험과 노하우로 독보적인 입지와 새로운 길을 개척해내...</h5>
+                    <a href="#">
+                      <img src="./img/icon-outlined-24-px-r-ight.svg" alt="">
+                      <h3>자세히 읽기</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="prev-btn control-btn" title="preview"></a>
+        <a href="#" class="next-btn control-btn" title="next"></a>
+
+        <div class="circle-box">
+          <div class="circle1 circle on"></div>
+          <div class="circle2 circle"></div>
+          <div class="circle3 circle"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="section2">
+      <div class="container">
+        <div class="top-menu">
+          <div class="top-menu-left">
+            <ul>
+              <li>
+                <a href="#" class="tab-btn-1 tab-btn on">추천 글</a>
+              </li>
+              <li>
+                <a href="#" class="tab-btn-2 tab-btn">기술</a>
+              </li>
+              <li>
+                <a href="#" class="tab-btn-3 tab-btn">사람&문화</a>
+              </li>
+              <li>
+                <a href="#" class="tab-btn-4 tab-btn">지속가능경영</a>
+              </li>
+              <li>
+                <a href="#" class="tab-btn-5 tab-btn">보도자료</a>
+              </li>
+            </ul>
+          </div>
+          <div class="top-menu-right">
+            <label for="new">
+              <input type="checkbox" name="new" value="new" id="new">
+              <i class="far fa-check-square"></i>
+              최신
+            </label>
+            <label for="po">
+              <input type="checkbox" name="po" value="po" id="po">
+              <i class="far fa-check-square"></i>
+              인기
+            </label>
+          </div>
+        </div>
+        <div class="sec2-con">
+          <div class="sec2-gap">
+            <div class="sec2-top-left">
+              <div class="large-card">
+                <!-- <div class="large-card-gap">
+                  <div class="img-box">
+                    <a href="#"><img src="./img/1_940X520_수정.webp" alt=""></a>
+                  </div>
+                  <div class="con-box">
+                    <div class="text-box">사람&문화</div>
+                    <a href="#">
+                      <h2>한 청년이 30년 반도체 베테랑이 되기까지.. 제1호 SK하이닉스 ‘마스터’의 탄생</h2>
+                    </a>
+                    <p>
+                      모든 분야마다 ‘구루(Guru, 스승, 선각자)’가 있다.<br>
+                      자신이 몸 담고 있는 분야에서 오랜 경험과 노하우로 독보적인 입지와 새로운 길을 개척해내고, 그 분야의 발전과 후진 양성을 위해 그동안 쌓은 지식과 비법을 묵묵히 기록하고 전파하는 이들이 그러하다.
+                    </p>
+                  </div>
+                </div> -->
+              </div>
+              <div class="small-card">
+                <div class="img-box">
+                  <a href="#"><img src="./img/CES_2023_thum.png" alt=""></a>
+                </div>
+                <div class="text-box-purple">기술</div>
+                <a href="#">
+                  <h3>CES 찾은 SK하이닉스, ‘그린 디지털 솔루션’으로 기술력 ‘눈도장’</h3>
+                </a>
+              </div>
+              <div class="small-card">
+                <div class="img-box">
+                  <a href="#"><img src="./img/CES_VC_TH.jpg" alt=""></a>
+                </div>
+                <div class="text-box-purple">보도자료</div>
+                <a href="#">
+                  <h3>SK하이닉스 박정호 부회장 글로벌 경영 가속, 퀄컴과 반도체 사업 협력 확대 논의</h3>
+                </a>
+              </div>
+
+              <div class="bottom-card">
+                <h2>DRAM과 NAND라는 양 날개로 <br>지속적인 사업 성장을<br> 도모합니다</h2>
+                <a href="#">
+                  <h4>제품정보 더보기</h4>
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <img src="./img/Bitmap.jpg" alt="">
+              </div>
+            </div>
+            <div class="sec2-top-right">
+              <!-- <div class="small-card">
+                <div class="img-box">
+                  <a href="#"><img src="./img/(940x520).png" alt=""></a>
+                </div>
+                <div class="text-box-purple">기술</div>
+                <a href="#">
+                  <h3>[반도체 전공정 6편 완결편] 반도체에 생명을 불어넣는 연결, ‘금속배선’ (6/6)</h3>
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="plus-btn">
+          <a href="#">글 더보기</a>
+          <i class="fas fa-plus"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3">
+      <div class="container">
+        <h2>SK하이닉스의 다채로운 이미지와 영상을 소개합니다</h2>
+        <div class="media-box">
+          <img src="./img/mediaLiveNewImg.png" alt="">
+          <a href="#"><h4>미디어라이브러리</h4></a>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="section4">
+      <div class="container">
+        <div class="sec4-top">
+          <h2>SK하이닉스 뉴스룸을 구독하세요</h2>
+          <a href="#">언론인이신가요?</a>
+        </div>
+        <div class="sec4-bottom">
+          <div class="sec4-bottom-left">
+            <h4>SK하이닉스가 전하는 산업 및 비즈니스 트렌드, 그리고 함께하는 세상의 다양한 이야기를 전합니다</h4>
+            <div class="input-box">
+              <label for="name">
+                <input type="name" id="name" placeholder="이름을 입력하세요">
+                <h2 class="name-text">필수 필드를 입력하십시오.</h2>
+              </label>
+              <label for="name">
+                <input type="email" id="email" placeholder="이메일을 입력하세요">
+                <h2 class="email-text1">필수 필드를 입력하십시오.</h2>
+                <h2 class="email-text2" style="display:none">이메일 형식이 정확해야 합니다.</h2>
+              </label>
+              <button type="submit" class="">구독하기</button>
+            </div>
+            <p>'구독하기'를 통한 구독신청시 SK하이닉스에게 정보를 제공하는 것에 동의하는 것으로 간주하며, SK하이닉스가 제공하는 정보를 수신함을 의미합니다. 자세한 사항은 SK하이닉스
+              <a href="#">개인정보취급방침</a> 및
+              <a href="#">이용약관</a>을 참조해주세요.</p>
+          </div>
+          <div class="sec4-bottom-right">
+            <div class="img"></div>
+            <!-- <img src="./img/bg-subscripO2x.png" alt=""> -->
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- 스크롤탑 -->
+      <div class="top-arrow">
+        <img src="./img/top-arrow.svg" alt="">
+      </div>
+
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="top">
+        <ul>
+          <li><a href="#">문의하기</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">뉴스룸 운영정책</a></li>
+          <li><a href="#">뉴스룸 이용안내</a></li>
+          <li>
+            <form action="">
+              <i class="fas fa-globe">
+                <select name="" id="">
+                  <option value="">Korean(한국어)</option>
+                  <option value="">English</option>
+                  <option value="">Chinese</option>
+                </select>
+              </i>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <div class="hynix-logo"></div>
+          <!-- <img src="./img/footer-logo.png" alt=""> -->
+        </div>
+        <p>COPYRIGHT© SK HYNIX INC. ALL RIGHTS RESERVED.</p>
+        <div class="right">
+          <div class="sns-box">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+            <a href="#"><img src="./img/ic-sns-ch.png" alt=""></a>
+          </div>
+          <a href="#" class="webaward"><img src="./img/groupO2x1230.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-container">
+      <div class="mobile-hynix-logo"></div>
+      <ul>
+        <li><a href="#">문의하기</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">뉴스룸 운영정책</a></li>
+        <li><a href="#">뉴스룸 이용안내</a></li>
+      </ul>
+      <p>COPYRIGHT© SK HYNIX INC. ALL RIGHTS RESERVED.</p>
+                <div class="sns-box">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+            <a href="#"><img src="./img/ic-sns-ch.png" alt=""></a>
+          </div>
+    </div>
+  </footer>
+</div>
+
+<script src="./js/skhynix.js"></script>
+</body>
+</html>

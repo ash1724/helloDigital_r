@@ -1,0 +1,122 @@
+@media all and (max-width:1200px){
+  #wrap #main #section2 .container .top-menu {
+    display:flex;
+    flex-direction: column-reverse;
+    .top-menu-left ul {
+      justify-content: space-around;
+    }
+    .top-menu-right {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding:0 20px 30px 0;
+    }
+  }
+  #wrap #main #section2 .container .sec2-con .sec2-gap {
+    display: block;
+    .sec2-top-left {
+      width: 100%;
+    }
+    .sec2-top-right {
+      width: 100%;
+      display: flex;
+      padding:40px 0 0 0;
+      justify-content: space-around;
+    }
+  }
+  #wrap #main #section3 {
+    height: 100%;
+    .container {
+      width: 100%;
+      display: block;
+      h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding:50px 0;
+      }
+      .media-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          margin:0;
+        }
+        i {
+          margin:0;
+        }
+      }
+    }
+  }
+
+  #wrap #main #section4 .top-arrow {
+    display: none;
+  }
+
+  #wrap #main #section4 {
+    height: auto;
+    .container {
+      height: auto;
+      .sec4-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        .sec4-bottom-left {
+          width: 100%;
+          .input-box {
+            justify-content: flex-start;
+          }
+        }
+        .sec4-bottom-right {
+          width: 100%;
+          img {
+            width: 100%;
+            // height: auto;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+
+
+}
+
+@media all and (max-width:1084px){
+  #wrap #header .container .center #nav {
+    display: none;
+  }
+  #wrap #header .container .right {
+    width: auto;
+  }
+  #wrap #header .container .right form label input {
+    display: none;
+  }
+  #wrap #header .container .right #mobile-menu {
+   display: block;
+  }
+}
+
+@media all and (max-width:768px){
+  #wrap #main #section4 .container .sec4-bottom .sec4-bottom-left {
+    .input-box {
+      display: block;
+      label {
+        padding-bottom: 10px;
+        input {
+          width: 100%;
+        }
+      }
+
+    }
+    p {
+      // background-color: lightcoral;
+      margin:100px 0 0 0;
+    }
+  }
+
+}
+
