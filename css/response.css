@@ -102,4 +102,7 @@
   #wrap #main #section4 .container .sec4-bottom .sec4-bottom-left p {
     margin: 100px 0 0 0;
   }
+  #wrap #main #section2 .container .top-menu .top-menu-left ul li a {
+    font-size: 12px;
+  }
 }
