@@ -1093,6 +1093,7 @@
   width: 100%;
 }
 #wrap #footer .mobile-container {
+  display: none;
   width: 100%;
   padding: 50px 0;
 }
