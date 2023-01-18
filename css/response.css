@@ -105,4 +105,25 @@
   #wrap #main #section2 .container .top-menu .top-menu-left ul li a {
     font-size: 12px;
   }
+  #wrap #main #section1 .slide-container {
+    height: auto;
+    margin: 0 0 150px 0;
+  }
+  #wrap #main #section1 .slide-container .slide-view {
+    overflow: visible;
+  }
+  #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {
+    display: block;
+  }
+  #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right {
+    width: 100%;
+    height: 210px;
+  }
+  #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con {
+    width: 100%;
+    max-width: none;
+  }
+  #wrap #main #section1 .slide-container .circle-box {
+    bottom: -240px;
+  }
 }

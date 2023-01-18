@@ -425,7 +425,7 @@
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap {
   height: 100%;
-  padding: 47px 30px;
+  padding: clamp(0.5rem, 3.9363vw, 4.7rem) clamp(1rem, 2.5126vw, 3rem);
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con {
   width: 100%;
@@ -434,14 +434,14 @@
   color: #fff;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con h4 {
-  font-size: 1.34vw;
-  padding: 0 0 15px 0;
+  font-size: clamp(1.3rem, 2.1776vw, 1.6rem);
+  padding: 0 0 clamp(1rem, 1.2563vw, 1.5rem) 0;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con #myProgress {
   width: 300px;
   height: 1px;
   background-color: #fff;
-  margin: 0 0 30px 0;
+  margin: 0 0 clamp(1rem, 2.5126vw, 3rem) 0;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con #myProgress #myBar {
   width: 0px;
@@ -449,16 +449,16 @@
   background-color: #fff;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con h2 {
-  font-size: 2.1776vw;
+  font-size: clamp(1.5rem, 2.1776vw, 2.6rem);
   font-weight: 500;
   line-height: 1.5;
-  padding: 0 0 30px 0;
+  padding: 0 0 clamp(1rem, 2.5126vw, 3rem) 0;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con h5 {
   color: rgba(255, 255, 255, 0.65);
-  font-size: 1.34vw;
+  font-size: clamp(1.1rem, 1.34vw, 1.6rem);
   line-height: 1.5;
-  padding: 0 0 30px 0;
+  padding: 0 0 clamp(1rem, 2.5126vw, 3rem) 0;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con a {
   position: relative;
