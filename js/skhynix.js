@@ -64,7 +64,11 @@
         //max-width값인 500px아래서만 작동
         if(winWidth <= 1194){
           //1.681:1
-            // $('.slide-view').height(boxWidth*0.37269681742);
+            $('.slide-container').height(boxWidth*0.37269681742);
+        }
+        else {
+          $('.slide-container').css('height','446px');
+          $('.slide-view').css('height','446px');
         }
       });
 

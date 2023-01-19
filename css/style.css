@@ -371,12 +371,13 @@
 #wrap #main #section1 {
   position: relative;
   width: 100%;
-  padding: 30px 0 60px 0;
+  padding: clamp(1rem, 2.5126vw, 3rem) 0 clamp(2rem, 5.0251vw, 6rem) 0;
   background-color: rgba(0, 0, 0, 0.03);
 }
 #wrap #main #section1 .slide-container {
   position: relative;
   width: 100%;
+  height: 446px;
   max-width: 1194px;
   margin: 0 auto;
   box-shadow: 0px 0px 5px 1px #eee;
@@ -397,7 +398,6 @@
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {
   width: 100%;
-  height: 100%;
   display: flex;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide.slide1 .slide-right {
@@ -411,8 +411,11 @@
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-left {
   width: 100%;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-left a {
+  display: block;
+  width: 100%;
   height: 100%;
-  max-width: 810px;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-left a img {
   width: 100%;
@@ -424,13 +427,14 @@
   background-color: #0072c6;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap {
+  width: 100%;
   height: 100%;
   padding: clamp(0.5rem, 3.9363vw, 4.7rem) clamp(1rem, 2.5126vw, 3rem);
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con {
   width: 100%;
-  max-width: 324px;
   height: 100%;
+  max-width: 324px;
   color: #fff;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con h4 {
@@ -452,7 +456,12 @@
   font-size: clamp(1.5rem, 2.1776vw, 2.6rem);
   font-weight: 500;
   line-height: 1.5;
-  padding: 0 0 clamp(1rem, 2.5126vw, 3rem) 0;
+  margin: 0 0 clamp(1rem, 2.5126vw, 3rem) 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right .slide-gap .slide-con h5 {
   color: rgba(255, 255, 255, 0.65);

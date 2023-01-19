@@ -119,20 +119,24 @@
   #wrap #main #section2 .container .top-menu .top-menu-left ul li a {
   font-size: 12px;
   }
-  #wrap #main #section1 .slide-container {
-    // height: 480px;
-    height: auto;
-    margin:0 0 150px 0;
-    .slide-view {
-      overflow: visible;
-      .slide-wrap {
-        .slide {
-          display: block;
+  #wrap #main #section1 {
+    background-color: transparent;
+    .slide-container {
+      // height: 480px;
+      height: auto;
+      margin:0 0 200px 0;
+      // margin:0 0 23.4375vw 0;
+      .slide-view {
+        overflow: visible;
+        .slide-wrap {
+          .slide {
+            display: block;
+          }
         }
       }
     }
-
   }
+
   #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-right {
     width: 100%;
     height: 210px;
@@ -144,6 +148,15 @@
   #wrap #main #section1 .slide-container .circle-box {
     // bottom: -40px;
     bottom: -240px;
+  }
+  .slide-left {
+    // height: auto;
+    a {
+      // height: auto;
+      img{
+        // height: auto;
+      }
+    }
   }
 }
 
