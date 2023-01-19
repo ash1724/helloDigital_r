@@ -378,7 +378,7 @@
             display: flex;
             .slide { // li
               width: 100%;
-              height: 100%;
+              // height: 100%;
               display: flex;
               &.slide1 {
                 .slide-right {
@@ -397,7 +397,7 @@
               }
               .slide-left {
                 width: 100%;
-                height: 100%;
+                // height: 100%;
                 a {
                   display: block;
                   width: 100%;

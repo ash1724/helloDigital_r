@@ -398,7 +398,6 @@
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {
   width: 100%;
-  height: 100%;
   display: flex;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide.slide1 .slide-right {
@@ -412,7 +411,6 @@
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-left {
   width: 100%;
-  height: 100%;
 }
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide .slide-left a {
   display: block;
