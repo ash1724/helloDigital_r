@@ -110,7 +110,7 @@
   }
   #wrap #main #section1 .slide-container {
     height: auto;
-    margin: 0 0 200px 0;
+    margin: 0 0 0px 0;
   }
   #wrap #main #section1 .slide-container .slide-view {
     overflow: visible;
