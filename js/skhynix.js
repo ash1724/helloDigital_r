@@ -81,15 +81,6 @@
         }
       });
 
-      // $(window).resize(function(){
-      //   var winWidth = $(window).width();
-      //   var boxWidth = $('.slide-view').width();
-      //   //max-width값인 500px아래서만 작동
-      //   if(winWidth <= 1194){
-      //     //1.681:1
-      //       $('.slide-view').height(boxWidth*0.37269681742);
-      //   }
-      // });
 
       function mainSlide(){
         $('.slide-wrap').animate({ left: -100 * cnt + '%' }, 600, function(){
@@ -200,128 +191,74 @@
 
     },
     section2:function(){
-      $.ajax({ // 큰카드
+      let txt = '';
+
+      function 반복함수(newarray){
+        $.each(newarray, function(idx, item){
+          if( idx == 0 ){
+            txt = `
+              <div class="large-card">
+                <div class="large-card-gap">
+                  <div class="img-box">
+                    <a href="#"><img src="./img/${item.이미지}" alt=""></a>
+                  </div>
+                  <div class="con-box">
+                    <div class="text-box">${item.종류}</div>
+                    <a href="#">
+                      <h2>${item.설명1}</h2>
+                    </a>
+                    <p>${item.설명2}</p>
+                  </div>
+                </div>
+              </div>
+            `
+          }
+          else if( idx >= 1 && idx <= 8 ) {
+            txt += `<div class="small-card smallCard${idx+1}">`
+            txt += `  <div class="img-box">`
+            txt += `    <a href="#"><img src="./img/${item.이미지}" alt=""></a>`
+            txt += `  </div>`
+            txt += `  <div class="text-box-purple">${item.종류}</div>`
+            txt += `  <a href="#">`
+            txt += `    <h3>${item.설명1}</h3>`
+            txt += `  </a>`
+            txt += `</div>`
+          }
+          else if( idx == 9 ){
+            txt +=`
+              <div class="bottom-card">
+                <h2>DRAM과 NAND라는 양 날개로 지속적인 사업 성장을 도모합니다</h2>
+                <a href="#">
+                  <h4>제품정보 더보기</h4>
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <img src="./img/Bitmap.jpg" alt="">
+              </div>
+            `
+          }
+          else if(idx >= 10 && idx <= 11){
+            txt += `<div class="small-card smallCard${idx+1}">`
+            txt += `  <div class="img-box">`
+            txt += `    <a href="#"><img src="./img/${item.이미지}" alt=""></a>`
+            txt += `  </div>`
+            txt += `  <div class="text-box-purple">${item.종류}</div>`
+            txt += `  <a href="#">`
+            txt += `    <h3>${item.설명1}</h3>`
+            txt += `  </a>`
+            txt += `</div>`
+          }
+        });
+      }
+
+      $.ajax({
         url:"./board_json/sec2-con.json",
         dataType:"JSON",
         success: function(res){
-          let txt = '';
-          $.each(res.sec2LargeCard, function(idx, item){
-            txt += `  <div class="large-card-gap largeCardGap${idx+1}">`;
-            txt += `   <div class="img-box">`;
-            txt += `     <a href="#"><img src="./img/${item.이미지}" alt=""></a>`;
-            txt += `   </div>`;
-            txt += `   <div class="con-box">`;
-            txt += `     <div class="text-box">${item.종류}</div>`;
-            txt += `     <a href="#">`;
-            txt += `       <h2>${item.설명1}</h2>`;
-            txt += `     </a>`;
-            txt += `     <p>`;
-            txt += `       ${item.설명2}`;
-            txt += `     </p>`;
-            txt += `   </div>`;
-            txt += `  </div>`;
-          });
 
-          $('#section2 .large-card').html(txt);
+          반복함수(res.sec2Con);
 
-          $.each(res.sec2LargeCard, function(idx, item){
-            $(`#section2 .largeCardGap${idx+1}`).css('display','none');
-            if( idx < 1 ){
-              $(`#section2 .largeCardGap${idx+1}`).css('display','block');
-            }
-          });
+          $('#section2 .grid-container').append(txt);
 
-          $('.tab-btn-1').on({ // 추천글
-            click: function(e){
-              e.preventDefault();
-              $.each(res.sec2LargeCard, function(idx, item){
-                $(`#section2 .largeCardGap${idx+1}`).css('display','none');
-                $(`#section2 .largeCardGap1`).css('display','block');
-              });
-            }
-          });
-
-          $('.tab-btn-2').on({ // 기술
-            click: function(e){
-              e.preventDefault();
-
-              $.each(res.sec2LargeCard, function(idx, item){
-                $(`#section2 .largeCardGap${idx+1}`).css('display','block');
-                if( item.종류 != "기술" ){
-                  $(`#section2 .largeCardGap${idx+1}`).css('display','none');
-                }
-              });
-            }
-          });
-          $('.tab-btn-3').on({ // 사람&문화
-            click: function(e){
-              e.preventDefault();
-
-              $.each(res.sec2LargeCard, function(idx, item){
-                $(`#section2 .largeCardGap${idx+1}`).css('display','block');
-                if( item.종류 != "사람&문화" ){
-                  $(`#section2 .largeCardGap${idx+1}`).css('display','none');
-                }
-              });
-            }
-          });
-          $('.tab-btn-4').on({ // 지속가능경영
-            click: function(e){
-              e.preventDefault();
-
-              $.each(res.sec2LargeCard, function(idx, item){
-                $(`#section2 .largeCardGap${idx+1}`).css('display','block');
-                if( item.종류 != "지속가능경영" ){
-                  $(`#section2 .largeCardGap${idx+1}`).css('display','none');
-                }
-              });
-            }
-          });
-          $('.tab-btn-5').on({ // 보도자료
-            click: function(e){
-              e.preventDefault();
-
-              $.each(res.sec2LargeCard, function(idx, item){
-                $(`#section2 .largeCardGap${idx+1}`).css('display','block');
-                if( item.종류 != "보도자료" ){
-                  $(`#section2 .largeCardGap${idx+1}`).css('display','none');
-                }
-              });
-            }
-          });
-
-
-        },
-        error: function(){
-          console.log("실패");
-        }
-      });
-
-      $.ajax({ // 작은카드
-        url:"./board_json/sec2-con.json",
-        dataType:"JSON",
-        success: function(res){
-          let txt = '';
-          $.each(res.sec2Con, function(idx, item){
-              txt += `<div class="small-card smallCard${idx+1}">`
-              txt += `  <div class="img-box">`
-              txt += `    <a href="#"><img src="./img/${item.이미지}" alt=""></a>`
-              txt += `  </div>`
-              txt += `  <div class="text-box-purple">${item.종류}</div>`
-              txt += `  <a href="#">`
-              txt += `    <h3>${item.설명1}</h3>`
-              txt += `  </a>`
-              txt += `</div>`
-          });
-
-          $('#section2 .sec2-top-right').html(txt);
-
-          $.each(res.sec2Con, function(idx, item){
-            $(`#section2 .smallCard${idx+1}`).css('display','none');
-            if( idx < 8 ){
-              $(`#section2 .smallCard${idx+1}`).css('display','block');
-            }
-          });
 
           $('.tab-btn').on({
             click: function(e){
@@ -334,58 +271,55 @@
           $('.tab-btn-1').on({ // 추천
             click: function(e){
               e.preventDefault();
-              $.each(res.sec2Con, function(idx, item){
-                $(`#section2 .smallCard${idx+1}`).css('display','none');
-                if( idx < 8 ){
-                  $(`#section2 .smallCard${idx+1}`).css('display','block');
-                }
-              });
+              반복함수(res.sec2Con);
+              $('#section2 .grid-container').html(txt);
             }
           });
 
           $('.tab-btn-2').on({ // 기술
             click: function(e){
               e.preventDefault();
-
-              $.each(res.sec2Con, function(idx, item){
-                $(`#section2 .smallCard${idx+1}`).css('display','block');
-                if( item.종류 != "기술" ){
-                  $(`#section2 .smallCard${idx+1}`).css('display','none');
-                }
+              const tech = res.sec2Con.filter(function(item){
+                return item.종류 == "기술";
               });
+
+              반복함수(tech);
+
+              $('#section2 .grid-container').html(txt);
             }
           });
+
           $('.tab-btn-3').on({ // 사람&문화
             click: function(e){
               e.preventDefault();
-              $.each(res.sec2Con, function(idx, item){
-                $(`#section2 .smallCard${idx+1}`).css('display','block');
-                if( item.종류 != "사람&문화" ){
-                  $(`#section2 .smallCard${idx+1}`).css('display','none');
-                }
+
+              const saram = res.sec2Con.filter(function(item){
+                return item.종류 == "사람&문화";
               });
+              반복함수(saram);
+              $('#section2 .grid-container').html(txt);
             }
           });
           $('.tab-btn-4').on({ // 지속가능경영
             click: function(e){
               e.preventDefault();
-              $.each(res.sec2Con, function(idx, item){
-                $(`#section2 .smallCard${idx+1}`).css('display','block');
-                if( item.종류 != "지속가능경영" ){
-                  $(`#section2 .smallCard${idx+1}`).css('display','none');
-                }
+
+              const jisoc = res.sec2Con.filter(function(item){
+                return item.종류 == "지속가능경영";
               });
+              반복함수(jisoc);
+              $('#section2 .grid-container').html(txt);
             }
           });
           $('.tab-btn-5').on({ // 보도자료
             click: function(e){
               e.preventDefault();
-              $.each(res.sec2Con, function(idx, item){
-                $(`#section2 .smallCard${idx+1}`).css('display','block');
-                if( item.종류 != "보도자료" ){
-                  $(`#section2 .smallCard${idx+1}`).css('display','none');
-                }
+
+              const bodo = res.sec2Con.filter(function(item){
+                return item.종류 == "보도자료";
               });
+              반복함수(bodo);
+              $('#section2 .grid-container').html(txt);
             }
           });
 
